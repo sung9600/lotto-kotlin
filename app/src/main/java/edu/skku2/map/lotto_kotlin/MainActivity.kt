@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         val outputFileOptions= ImageCapture.OutputFileOptions.Builder(file).build()
         imageCapture?.takePicture(outputFileOptions,executor,object:ImageCapture.OnImageSavedCallback{
             override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
-                //Toast.makeText(this@MainActivity, "Asdf", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@MainActivity, "Asdf", Toast.LENGTH_LONG).show() 
             }
 
             override fun onError(exception: ImageCaptureException) {

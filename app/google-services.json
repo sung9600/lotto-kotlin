@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "829020473021",
+    "firebase_url": "https://lottery-6e8cf.firebaseio.com",
+    "project_id": "lottery-6e8cf",
+    "storage_bucket": "lottery-6e8cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829020473021:android:84540fc1fbf5b98b2ad9d4",
+        "android_client_info": {
+          "package_name": "edu.skku2.map.lotto_kotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829020473021-538u32852f8a5vep24na6s0gnumtlrm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.skku2.map.lotto_kotlin",
+            "certificate_hash": "3fefae264da78c8d38645f8806e54fc06067ebba"
+          }
+        },
+        {
+          "client_id": "829020473021-a1a1pvqdcedpki5e6pfdoqdp62leonum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFnbFOwrmKgZxowl9iRubf1xDfLn1Dh1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829020473021-a1a1pvqdcedpki5e6pfdoqdp62leonum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

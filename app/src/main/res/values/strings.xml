@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">lotto-kotlin</string>
+    <string name="result_here">result here</string>
 </resources>

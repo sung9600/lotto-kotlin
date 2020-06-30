@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.icu.text.SimpleDateFormat
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
@@ -56,11 +59,20 @@ class MainActivity : AppCompatActivity() {
         val outputFileOptions= ImageCapture.OutputFileOptions.Builder(file).build()
         imageCapture?.takePicture(outputFileOptions,executor,object:ImageCapture.OnImageSavedCallback{
             override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
-                //Toast.makeText(this@MainActivity, "Asdf", Toast.LENGTH_LONG).show() 
+                val msg="${file.absolutePath}"
+                runOnUiThread{
+                    Toast.makeText(this@MainActivity, msg, Toast.LENGTH_LONG).show()
+                }
+                val newIntent= Intent(this@MainActivity,Viewresult::class.java)
+                newIntent.putExtra("filepath",msg)
+                startActivity(newIntent)
             }
 
             override fun onError(exception: ImageCaptureException) {
-                //Toast.makeText(this@MainActivity, "asdf", Toast.LENGTH_LONG).show()
+                val msg="${exception.message}"
+                runOnUiThread {
+                    Toast.makeText(this@MainActivity, msg, Toast.LENGTH_LONG).show()
+                }
             }
         })
     }
